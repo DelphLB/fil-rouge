@@ -10,13 +10,13 @@ export default class SignUp extends Component {
       lastname: "Bond",
     };
     this.handleInput = this.handleInput.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleInput(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
 
   handleSubmit(e) {
-    e.preventdefault();
     console.log(this.state);
   }
 
